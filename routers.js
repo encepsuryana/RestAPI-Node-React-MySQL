@@ -11,4 +11,8 @@ module.exports = function (app) {
   app.route("/tampil/:id").get(json.showIdMahasiswa);
 
   app.route("/tambah").post(json.addDatasMhs);
+
+  app.route("/ubah").put(json.editDataMhs);
+
+  app.route("/hapus").delete(json.deleteDataMhs);
 };
