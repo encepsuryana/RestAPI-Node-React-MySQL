@@ -9,4 +9,6 @@ module.exports = function (app) {
   app.route("/tampil").get(json.showAllDatas);
 
   app.route("/tampil/:id").get(json.showIdMahasiswa);
+
+  app.route("/tambah").post(json.addDatasMhs);
 };
