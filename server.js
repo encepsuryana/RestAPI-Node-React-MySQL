@@ -6,10 +6,14 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+//Routes
+const routes = require("./routers");
+routes(app);
+
 //use port
 const port = 3000;
 
 //connection
 app.listen(port, () => {
-  console.log("Server started on Port: " + port);
+  console.log("Server started on Port: ", port);
 });
