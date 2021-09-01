@@ -93,3 +93,7 @@ exports.login = function (req, res) {
     }
   });
 };
+
+exports.pageSecret = function (req, res) {
+  response.ok("This page only authorize for user has Role 2!", res);
+};
